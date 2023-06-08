@@ -7,14 +7,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <head>
         <title>La Musica</title>
         <meta charset="UTF-8"> 
-        <link href="css/menu.css" rel="stylesheet" type="text/css"/> 
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>  
     </head>
     <body>
          <header class="header">
             <nav class="nav">
-        <a class="nav-link logo" href="index.html">Musica</a>
+        <a class="nav-link logo" href="index.html">Música</a>
         
         <ul class="nav-menu">
+            <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="principal.html">Principal</a></li> 
             <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="cumbia.html">Cumbia</a></li>     
             <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="pop.html">Pop</a></li> 
             <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="Salsa.html">Salsa</a></li> 
@@ -28,7 +29,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         
         <aside class="lateral">
         <div>
-            <h2>Donde la vida toma color</h2><!-- comment -->
+            <h1>Donde la vida toma color</h1><!-- comment -->
              <h3>Pagina Principal de Música</h3>
         </div>
            
@@ -39,33 +40,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 
                 <p><i>En esta página se encontrarán diferentes tipos o géneros de música</i></p>
                 <article>
-                    <table border="1">
+                    <table border="0">
                         <thead>
                             <tr>
-                                <th>Tipos de música</th>
+                                <th>Tipos de música:</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Salsa</td>
+                                <td>-Salsa</td>
                             </tr>
                             <tr>
-                                <td>Cumbia</td>
+                                <td>-Cumbia</td>
                             </tr>
                             <tr>
-                                <td>Pop</td>
+                                <td>-Pop</td>
                             </tr>
                             <tr>
-                                <td>Trap</td>
+                                <td>-Trap</td>
                             </tr>
                             <tr>
-                                <td>Reguetton</td>
+                                <td>-Reguetton</td>
                             </tr>
                             <tr>
-                                <td>Rap</td>
+                                <td>-Rap</td>
                             </tr>
                             <tr>
-                                <td>Bachata</td>
+                                <td>-Bachata</td>
                             </tr>
                         
                         </tbody>
@@ -75,6 +76,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </article>    
                 
             </div>
+            <section>
+            <article>
+                <h2 >¡Dinos que tipo de música te gusta!</h2>
+                <form action="/usuarios/registro" method="POST">
+                    Usuario: <input type="text" name="name" value="" size="20" /><br/>
+                    Tipo de Musica: <input type="text" name="type music" value="" size="50" /><br/>
+                    
+                    <input type="submit" value="enviar" />
+                </form>
+            </article>
+        </section>
     </body>
     <footer >
            <p>Derechos Reservados &COPY; 2023</p> 
